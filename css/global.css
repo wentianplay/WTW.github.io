@@ -1,0 +1,449 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color:#333;
+}
+a.navbar-brand top_logo {
+	width:500px;
+}
+#ulist li{
+	margin:0 20px;
+}
+@media (max-width:768px) {
+	.navbar-inverse .navbar-toggle .icon-bar {
+	    background-color: #000;
+	}
+	.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+		background-color: #FFF;
+	}
+	.navbar-nav{
+		position: absolute;
+		right: 0;
+		z-index: 100;
+		text-align: center;
+		width: 104%;
+		background-color: #FFFFFF;
+	}
+	.navbar-nav li{
+		border-bottom:1px solid #DDDDDD;
+	}
+	.navbar-collapse{
+		border-top:0;
+	}
+} 
+.top_logo img{
+	margin-top:-18px;
+}
+.top_logo img.first{
+	float:left;
+	display: inline-block;
+	width:216px;
+	height:80px;
+}
+.top_logo img.second{
+	float:left;
+	width:216px;
+	height:80px;
+	display: inline-block;
+	position: absolute;
+	left:14%;
+}
+.navbar {
+    margin-bottom: 5px;
+}
+.navbar-inverse{
+	background:rgba(255,255,255,1);
+	border: 0;
+	color: #000000;
+	padding:5px 0;
+	height: 80px;
+}
+.navbar-inverse .navbar-nav>li>a.active{
+	color:#3ec7da;
+}
+.navbar-inverse .navbar-nav>li>a,.navbar-inverse .navbar-nav>li>a:hover, 
+.navbar-inverse .navbar-nav>li>a:active{
+    color: #000000;
+	margin-top:12px;
+}
+.navbar-inverse .navbar-nav>li>a img{
+	display: inline;
+	float: left;
+}
+/* Carousel base class */
+.carousel {
+  /* min-height: calc(100vh - 150px);
+  max-height: 100vh; */
+  height: 40.25vw;
+  max-width: 100%;
+  margin-bottom: 60px;
+  box-sizing: border-box;
+}
+.carousel-caption {
+  z-index: 10;
+}
+.carousel .item {
+ /* min-height: calc(100vh - 150px);
+  max-height: 100vh; */
+  height: 40.25vw;
+  max-width: 100%;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+ /* min-height: calc(100vh - 150px);
+  max-height: 100vh; */
+  height: 40.25vw;
+ 
+}
+/* 超小屏幕（手机，小于 768px） */
+/* 没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（还记得 Bootstrap 是移动设备优先的吗？） */
+ @media (max-width:768px) { 
+	.carousel {
+	  height:35.25vw;
+	  width: 100vw;
+	  margin-bottom: 60px;
+	  box-sizing: border-box;
+	}
+	.carousel-caption {
+	  z-index: 10;
+	}
+	.carousel .item {
+	  height:35.25vw;
+	  width: 100vw;
+	  background-color: #777;
+	}
+	.carousel-inner > .item > img {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100vw;
+	  height:35.25vw;
+	}
+}
+/* @media (width:1024px){ 
+	.carousel {
+	  min-height: calc(100vh - 300px);
+	  max-height: 100vh;
+	  width: 100vw;
+	  margin-bottom: 60px;
+	  box-sizing: border-box;
+	}
+	.carousel-caption {
+	  z-index: 10;
+	}
+	.carousel .item {
+	  min-height: calc(100vh - 300px);
+	  max-height: 100vh;
+	  width: 100vw;
+	  background-color: #777;
+	}
+	.carousel-inner > .item > img {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100vw;
+	  min-height: calc(100vh - 300px);
+	  max-height: 100vh;
+	}
+} */
+/**
+ * 首页 字体行距
+ */
+.index_about{
+	padding-left:35px;
+}
+.index_about_btn{
+	margin-top:20px;
+	border-radius: 25px;
+	width: 120px;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	color:#CCCCCC;
+}
+.font_space{
+	line-height: 2em;
+}
+.index_products img{
+	position: relative;
+	width: 110%;
+	height:221px;
+}
+@media (max-width:768px) {
+	.index_products img{
+		width:100%;
+		height:35.25vw;
+	}
+} 
+.index_products .mask {
+    position: absolute;
+    top: 0;
+    left: 10;
+	width: 100%;
+    height: 221px;
+    background: rgba(0, 0, 0,0.6);
+    color: #ffffff;
+    opacity: 0;
+	text-align: center;
+	padding:20px 5px;
+}
+.index_products a:hover .mask{
+    opacity: 1;           
+}
+.index_product_desc{
+	padding:5px 20px 10px 20px;
+}
+.index_detail_btn,.index_detail_btn:hover{
+	background-color:transparent ;
+	color:#FFFFFF;
+	border-radius: 20px;
+	width: 120px;
+}
+.index_join_btn{
+	color:#FFFFFF;
+	border-radius: 20px;
+	width: 120px;
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	color:#CCCCCC;
+}
+/**
+ * about_us
+ */
+#about_banner_container{
+	padding:0 0 30px 0;
+	overflow-x:hidden;
+}
+@media (max-width:768px) {
+	#about_banner_container img{
+		width: 100%;
+		height:31.25vw;
+	}
+}
+#culture_container{
+	background-color: #EEEEEE;
+	width: 100%;
+}
+#culture_container h3{
+	 padding:30px 0;
+	 text-align: center;
+	 margin:5px 0 20px 0;
+}
+@media (max-width:768px) {
+	#culture_container h3 {
+	    text-align: center;
+		padding:15px 0 0 0 ;
+		margin:0 0 0 0 ;
+	}
+}
+.culture_content{
+	text-align: center;
+	margin-left:-8%;
+}
+.culture_title{
+	padding-top:15px;
+	color:#3ec7da;
+	font-size: 16px;
+}
+.culture_val{
+	 text-align:center;
+	 padding:40px 15px;
+	 background-color:#FFFFFF;
+	 margin:10px;
+	 height:200px;
+}
+/**
+ * 产品中心
+ */
+.list_content{
+	padding-top:15px;
+}
+.list_title{
+	font-size: 18px;
+}
+.list_item span{
+	font-size: 14px;
+	border:1px solid #CCCCCC;
+	border-radius: 5px;
+	margin:2px;
+	padding: 5px;
+	color: #CCCCCC;
+}
+@media (max-width:768px) {
+	.list_item span{
+		font-size: 12px;
+		border:1px solid #CCCCCC;
+		border-radius: 5px;
+		margin:2px;
+		padding:2px;
+		color: #CCCCCC;
+	}
+}
+.detail_btn{
+	border-radius: 25px;
+	float:right;
+	width: 120px;
+	margin-top:15px;
+	background-color: #FFFFFF;
+	border:1px solid #CCCCCC;
+	color:#CCCCCC;
+}
+/* a.detail_btn:hover{
+	background-color: #CCCCCC;
+	border:1px solid #CCCCCC;
+	color:#FFFFFF;
+} */
+.product_desc{
+	border-top:1px solid #CCCCCC;
+	padding-top:5px;
+	margin-top:8px;
+	color:#AAAAAA;
+}
+@media (max-width:768px) { 
+	 #wrap li img{
+		/*width: 258px;
+	}
+	.stacked-cards li{
+		width:75%;
+		height: 155px;*/
+	} 
+}
+
+/**
+ * 加入join 我们
+ */
+#join_banner_container{
+	padding:0 0 30px 0;
+	margin:0;
+	overflow-x:hidden;
+}
+@media (max-width:768px) {
+	#join_banner_container img{
+		width: 100%;
+		height:31.25vw;
+	}
+}
+.join_container{
+}
+.join_container .first_join{
+	text-align: center;
+	margin:20px 0 15px 0;
+	color: #000000;
+}
+.join_container .second_join{
+	padding:10px 0 25px 0;
+}
+.second_join a,.second_join a:hover{
+	text-decoration: none;
+}
+/**
+ * 招聘岗位
+ */
+@media (max-width:768px) { 
+	.second_join .col-md-2 img{
+		width:75%;
+		margin-left: 15%;
+	}
+}
+@media (max-width:1440px) and (min-width:1024px) { 
+	.second_join .col-md-2 img{
+		width:90%;
+	}
+}
+@media (min-width:1440px) { 
+	.second_join .col-md-2 img{
+		width:224px;
+	}
+}
+
+/**
+ * 产品详情
+ */
+.detail_container{
+	text-align:center;
+}
+#wrap{
+	margin-bottom: 30px;
+	padding:5px 0 30px 0;
+}
+
+@media (max-width:768px) {
+	#wrap li img{
+		width:100%;
+		height:180px;
+	}
+	.stacked-cards li{
+		width:75%;
+		height: 155px;
+	} 
+}
+
+.detail_container2{
+	text-align:center;
+	width: 90%;
+	max-width: 1070px;
+}
+.detail_container2 h4{
+	color: #0000FF;
+	padding-left: 25px;
+}
+.detail_container2 ul >li{
+	color: #0000FF;
+	font-weight: bold;
+}
+.detail_container2 ul >p{
+	margin-left: -25px;
+}
+.version_desc{
+	border:1px dashed #000000;
+	padding:10px 0;
+	text-align: left;
+	margin:20px 0;
+}
+.version_desc p{
+	padding-left: 25px;
+}
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 40px 0;
+  text-align: center;
+  background-color: #222323;
+  color:#999;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width:768px) { 
+	.blog-footer {
+	  padding:20px 10px;
+	  text-align:left;
+	  background-color: #222323;
+	  font-size:0.5em;
+	}
+	@media (height:1024px) {
+		.blog-footer {
+			position: relative;
+			bottom: 0;
+		}
+	}
+}
+@media (max-width:1024px) { 
+	.blog-footer {
+	  width: 100%;
+	  padding:20px 10px;
+	  text-align:center;
+	  background-color: #222323;
+	}
+	@media (height:1366px) {
+		.blog-footer {
+			position: absolute;
+			bottom: 0;
+		}
+	}
+} 
